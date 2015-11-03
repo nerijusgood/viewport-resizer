@@ -1,14 +1,20 @@
-# Fresizer
+# Viewport Resizer
 
-A tiny javascript module that helps you resize a specific element to your desired sizes. Case use would be resizing viewports to emulate devices on your website or app.
+A tiny vanilla javascript module that helps you resize a div or element to your desired viewports. Case use would be resizing viewports to emulate devices on your website or app.
 
-UNSTABLE. Please wait till 1.0.0 version for production use.
+Alpha version.
 
 ## Basic Usage
 
+1. Require
 ```javascript
-var fresizer = require('fresizer');
+var viewportResizer = require('viewport-resizer');
 
+```
+
+2.
+```javascript
+var viewportResizer = require('viewport-resizer');
 
 ```
 
