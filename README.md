@@ -4,6 +4,10 @@ A tiny vanilla javascript module that helps you resize a div or element to your 
 
 Alpha version.
 
+<p align="center">
+  <img src="http://i.imgur.com/xIcLhNq.gifv" width="500">
+</p>
+
 ## Install
 
 ```shell
@@ -14,13 +18,13 @@ npm install --save viewport-resizer
 
 Require:
 ```javascript
-var viewportResizer = require('viewport-resizer');
+var viewpresize = require('viewport-resizer');
 
 ```
 
 The function:
 ```javascript
-viewportResizer.viewpr(options);
+viewpresize.viewpr(options);
 
 ```
 
@@ -37,7 +41,7 @@ Add markup:
 
 ```
 
-### Options
+## Options
 
 **Add custom viewports**
 

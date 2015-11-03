@@ -1,6 +1,6 @@
 {
   "name": "viewport-resizer",
-  "version": "0.0.4",
+  "version": "0.1.1",
   "description": "A tiny vanilla javascript module that helps you resize a div or element to your desired viewports.",
   "main": "./lib/fresizer",
   "scripts": {
