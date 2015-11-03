@@ -5,7 +5,7 @@ A tiny vanilla javascript module that helps you resize a div or element to your 
 Alpha version.
 
 <p align="center">
-  <img src="http://i.imgur.com/xIcLhNq.gifv" width="500">
+  <img src="http://nerijusgood.github.io/viewport-resizer/demo/img/preview.gif" width="360">
 </p>
 
 ## Install
