@@ -1,0 +1,30 @@
+{
+  "name": "fresizer",
+  "version": "0.1.0",
+  "description": "Small js module that allows to resize frame (div, or any containing element) to any devices sizes for testing.",
+  "main": "./lib/fresizer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerijusgood/Fresizer.git"
+  },
+  "keywords": [
+    "viewport",
+    "viewer",
+    "div",
+    "resizer",
+    "device",
+    "size",
+    "tester",
+    "resize",
+    "module"
+  ],
+  "author": "Nerijus Gudas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerijusgood/Fresizer/issues"
+  },
+  "homepage": "https://github.com/nerijusgood/Fresizer#readme"
+}
