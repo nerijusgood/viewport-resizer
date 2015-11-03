@@ -2,10 +2,10 @@
 
 A tiny vanilla javascript module that helps you resize a div or element to your desired viewports. Case use would be resizing viewports to emulate devices on your website or app.
 
-Alpha version.
+<a href="http://nerijusgood.github.io/viewport-resizer/demo">Demo</a>
 
 <p align="center">
-  <img src="http://nerijusgood.github.io/viewport-resizer/demo/img/preview.gif" width="360">
+  <img src="http://nerijusgood.github.io/viewport-resizer/demo/img/preview.gif" width="650">
 </p>
 
 ## Install
