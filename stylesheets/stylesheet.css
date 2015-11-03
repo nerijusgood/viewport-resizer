@@ -53,6 +53,13 @@ a {
       margin-top: 1rem;
       margin-left: 0; } }
 
+.btn.alt {
+	color: #159957;
+  background-color: rgba(21, 153, 87, 0.1);
+  border-color: #159957;
+	margin: auto;
+}
+
 .page-header {
   color: #fff;
   text-align: center;
