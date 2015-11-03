@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Viewport-resizer by nerijusgood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Viewport-resizer</h1>
+      <h2 class="project-tagline">A tiny vanilla javascript viewport resizer.</h2>
+      <a href="https://github.com/nerijusgood/viewport-resizer" class="btn">View on GitHub</a>
+      <a href="https://github.com/nerijusgood/viewport-resizer/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/nerijusgood/viewport-resizer/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="viewport-resizer" class="anchor" href="#viewport-resizer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Viewport Resizer</h1>
+
+<p>A tiny vanilla javascript module that helps you resize a div or element to your desired viewports. Case use would be resizing viewports to emulate devices on your website or app.</p>
+
+<p>Alpha version.</p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<div class="highlight highlight-source-shell"><pre>npm install --save viewport-resizer</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Require:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> viewportResizer <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>viewport-resizer<span class="pl-pds">'</span></span>);
+</pre></div>
+
+<p>The function:</p>
+
+<div class="highlight highlight-source-js"><pre>viewportResizer.viewpr(options);
+</pre></div>
+
+<p>Add markup:</p>
+
+<pre lang="markup"><code>
+&lt;div id="viewpr-list"&gt;
+    Viewport size links
+&lt;/div&gt;
+
+&lt;div id="viewpr-content"&gt;
+    Content that will be resized
+&lt;/div&gt;
+
+</code></pre>
+
+<h3>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<p><strong>Add custom viewports</strong></p>
+
+<p>Example shows default settings:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> options <span class="pl-k">=</span> {
+    viewports <span class="pl-k">:</span> [
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>320<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>Mobile<span class="pl-pds">'</span></span>
+        },
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>768<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>Tablet<span class="pl-pds">'</span></span>
+        },
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>1024<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Horizontal Tablet<span class="pl-pds">'</span></span>
+        },
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>1280<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Desktop<span class="pl-pds">'</span></span>
+        }
+    ]
+};</pre></div>
+
+<p><strong>Available options</strong></p>
+
+<div class="highlight highlight-source-js"><pre>showName<span class="pl-k">:</span> boolean</pre></div>
+
+<p>If set to <code>true</code> shows the name of the viewport, else size number.</p>
+
+<div class="highlight highlight-source-js"><pre>svg<span class="pl-k">:</span> boolean</pre></div>
+
+<p>If set to <code>true</code> adds svg <code>use</code> to markup to allow svg sprite icons (demo).</p>
+
+<div class="highlight highlight-source-js"><pre>reset<span class="pl-k">:</span> string</pre></div>
+
+<p>Set custom name to reset button (dafault <code>reset</code>)</p>
+
+<div class="highlight highlight-source-js"><pre>wrapper<span class="pl-k">:</span> string</pre></div>
+
+<p>Change the id name of wrapper of content (dafault <code>viewpr-content</code>)</p>
+
+<div class="highlight highlight-source-js"><pre>links<span class="pl-k">:</span> string</pre></div>
+
+<p>Change the id name of link wrapper (dafault <code>viewpr-list</code>)</p>
+
+<div class="highlight highlight-source-js"><pre>animation<span class="pl-k">:</span> string</pre></div>
+
+<p>Change inlined css on wrapper item (default <code>-webkit-transition:width .3s ease-in-out; -moz-transition: width .3s ease-in-out; -ms-transition: width .3s ease-in-out; -o-transition: width .3s ease-in-out; transition: width .3s ease-in-out;</code>)</p>
+
+<p><strong>Example</strong></p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> options <span class="pl-k">=</span> {
+    viewports <span class="pl-k">:</span> [
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>320<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>Mobile<span class="pl-pds">'</span></span>
+        },
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>480<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Mobile Horizontal<span class="pl-pds">'</span></span>
+        },
+        {
+            size<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>1280<span class="pl-pds">'</span></span>,
+            name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Monitor<span class="pl-pds">'</span></span>
+        }
+    ],
+    showName<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+    reset<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Original<span class="pl-pds">'</span></span>,
+    animation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>
+};</pre></div>
+
+<p>This example will create only 3 viewports with custom reset button name and no animation.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/nerijusgood/viewport-resizer">Viewport-resizer</a> is maintained by <a href="https://github.com/nerijusgood">nerijusgood</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
