@@ -127,3 +127,7 @@ var options = {
 ```
 
 This example will create only 3 viewports with custom reset button name and no animation.
+
+## License
+MIT
+
